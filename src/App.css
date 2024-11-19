@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   background-color: #222;
+  
+}
+.board {
+    width: fit-content;
+}
+h1 {
+    text-align: center;
+    color: #fff;
+}
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   gap: 10px;
+   margin-bottom: 20px;
+}
+
+
+.square {
+   width: 70px;
+   height: 70px;
+   border: 2px solid #333;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.board .turno-square {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.is-selected {
+    background-color: #48e;
+}
+
+.boton {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   
+
+}
+
+.boton button {
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.winner {
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+   background-color: #3335;
+    top: 0;
+    left: 0;
+}
+
+.text {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    gap: 20px;
+    padding: 20px;
+    opacity: 1;
+}
